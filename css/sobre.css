@@ -8,12 +8,16 @@
 
 body {
     width: 100%;
-    height: 200vh;
+    height: 100vh;
 }
 
 main {
     width: 100%;
-    height: 100vh;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -21,10 +25,7 @@ header {
     height: 9vh;
     background-color: #000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 250px;
-    padding-right: 250px;
+    justify-content: center;
 }
 
 header a,
@@ -33,16 +34,24 @@ header a :visited {
     color: #FEFDFD;
 }
 
+.blocoDeConteudo {
+    width: 80%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo a {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 20px;
+    font-size: 45px;
     font-weight: 300;
 }
 
 .menu a {
     margin-left: 40px;
     font-family: "Barlow", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     position: relative;
     padding-bottom: 5px;
@@ -56,7 +65,7 @@ header a :visited {
     height: 2px;
     left: 0;
     bottom: 0;
-    background-color: #FDFEFE;
+    background-color: #FEFDFD;
     transition: width 0.3s ease-in-out;
 }
 
@@ -64,127 +73,69 @@ header a :visited {
     width: 100%;
 }
 
-.primeiraSessaoSobre {
-    width: 100%;
-    height: 91vh;
-    background: linear-gradient(to bottom, rgba(18, 18, 18, 0) 70%, #000000 100%), url(../images/image_3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.containerSlogan {
-    width: 100%;
-    height: 35vh;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
-.containerSlogan h1 {
+.tituloSobre h1 {
     font-family: "Lato", sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 600;
-    color: #FDFEFE;
+    color: #121212;
+    margin-bottom: 50px;
 }
 
-.segundaSessaoSobre {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom, rgba(18, 18, 18, 0) 95%, #000000 100%), #FDFEFE;
+.cardsEquipe {
+    width: 60%;
+    height: 50vh;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #dcdcdc;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
-.containerSobre {
-    width: 79%;
-    height: 100vh;
-    background: linear-gradient(to bottom, rgba(18, 18, 18, 0) 95%, #000000 100%), #FDFEFE;
+.card:hover {
+    transform: scale(1.05);
 }
 
-#primeiroTexto {
-    padding-left: 40px;
+.card img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 30px;
 }
 
-#primeiroTexto h1 {
+.card h1 {
     font-family: "Lato", sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
     color: #121212;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
-#primeiroTexto span {
+.card p {
     font-family: "Lato", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #121212;
-    font-family: "Lato", sans-serif;
+    margin-bottom: 6px;
 }
 
-#segundoTexto {
-    padding-left: 40px;
-}
-
-#segundoTexto h1 {
-    font-family: "Lato", sans-serif;
-    font-size: 35px;
-    font-weight: 600;
+.card a {
+    font-size: 40px;
     color: #121212;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-#segundoTexto span {
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #121212;
-    font-family: "Lato", sans-serif;
-}
-
-#terceiroTexto {
-    padding-left: 40px;
-}
-
-#terceiroTexto h1 {
-    font-family: "Lato", sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    color: #121212;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-#terceiroTexto span {
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #121212;
-    font-family: "Lato", sans-serif;
-}
-
-#quartoTexto {
-    padding-left: 40px;
-}
-
-#quartoTexto h1 {
-    font-family: "Lato", sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    color: #121212;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-#quartoTexto span {
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #121212;
-    font-family: "Lato", sans-serif;
 }
 
 footer {
@@ -200,5 +151,5 @@ footer span {
     font-family: "Barlow", sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #FDFEFE;
+    color: #FEFDFD;
 }
